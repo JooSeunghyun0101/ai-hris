@@ -52,10 +52,10 @@ export default function Home() {
       description: '신인사제도 도입과 함께 조직이 지속적으로 발전할 수 있도록 설계된 시스템입니다. 모듈화된 설계와 최신 기술 스택으로 유연한 확장성과 안정성을 제공하여 조직의 미래를 준비합니다.',
       cardDescription: '신인사제도를 위한 AI 기반 실시간 성과관리 시스템',
       features: [
+        'AI를 활용한 평가시스템',
         '바이브코딩 기반 유지보수',
         '자유로운 평가 유형 확장',
-        '효과적인 실시간 성과관리',
-        '안정적인 데이터 관리'
+        '효과적인 실시간 성과관리',        
       ],
       cardFeatures: [
         'AI 피드백 어시스턴트',
@@ -70,46 +70,46 @@ export default function Home() {
     },
     {
       id: 'monthly',
-      title: '월성과평가',
-      subtitle: '체계적인 월별 성과 관리',
-      description: '매월 체계적인 성과 리뷰를 통해 지속적인 성장과 개선을 도모합니다.',
-      cardDescription: '월별 목표 설정부터 성과 측정까지, 체계적인 프로세스로 개인과 팀의 지속적인 성장을 지원합니다.',
+      title: 'PL월성과평가',
+      subtitle: '평가의 공정성과 효율성을 동시에 실현하는 All-in-One 평가솔루션',
+      description: '근태 관리, 근무율 계산, 성과평가, 급여산출을 하나의 시스템으로 통합한 차세대 솔루션입니다. 실시간 대시보드와 AI 분석을 통해 평가자의 편향을 탐색하고, 근태부터 성과급까지의 전 과정을 자동화합니다.',
+      cardDescription: '근태 데이터부터 성과급 산출까지, 전 과정을 자동화하는 실시간 성과관리 시스템',
       features: [
-        '월별 목표 설정 및 추적',
-        'KPI 기반 성과 측정',
-        '상사-부하 1:1 미팅 지원',
-        '성과 트렌드 분석'
+        '근태-평가-성과급 통합관리',
+        '역할별 맞춤 대시보드',
+        '평가 인사이트 도출',
+        '근무율 및 성과급 자동계산'
       ],
       cardFeatures: [
-        '스마트 목표 관리',
-        'KPI 대시보드',
-        '1:1 미팅 가이드',
-        '성과 트렌드 차트'
+        '스마트 근태관리',
+        '근무율 및 평가 종합분석',
+        '개인별 성과 리뷰',
+        'AI 편향 분석 및 피드백'
       ],
-      buttonText: '월성과평가 체험하기',
+      buttonText: '월성과평가 시작하기',
       buttonUrl: 'https://9000-firebase-studio-1751945698184.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev',
       icon: <Calendar size={32} />,
       gradient: 'bg-gradient-to-br from-[#FFA400] to-yellow-600'
     },
     {
       id: 'mobile',
-      title: '모바일 근태관리',
-      subtitle: '언제 어디서나 간편한 근태 관리',
-      description: '모바일 기기로 간편하게 출퇴근을 관리하고, 실시간으로 근무 현황을 확인할 수 있습니다.',
-      cardDescription: 'GPS 기반의 정확한 위치 추적과 실시간 알림으로, 언제 어디서나 편리하게 근태를 관리할 수 있습니다.',
+      title: 'Mobile eHR',
+      subtitle: 'OK금융그룹 임직원을 위한 가장 스마트한 모바일 e-HR 솔루션입니다.',
+      description: '언제 어디서든 터치 몇 번으로 간편하게 HR 관련 신청 업무를 처리하고, AI 기반의 혁신적인 기능으로 새로운 차원의 업무 환경을 경험하세요. 복잡했던 서류 작업은 이제 그만, 간편신청 앱 하나로 모든 것이 해결됩니다.',
+      cardDescription: '번거로운 HR 요청들을 모바일 앱 하나로 통합하여, 언제 어디서든 손쉽게 신청하고 관리할 수 있습니다.',
       features: [
-        'GPS 기반 출퇴근 체크',
-        '실시간 근무 현황 조회',
-        '휴가 및 외근 신청',
-        '팀원 일정 공유'
+        '모바일 최적화',
+        '신속한 업무처리',
+        '통합 관리',
+        'AI 기반 데이터 분석'
       ],
       cardFeatures: [
-        '정확한 GPS 위치 추적',
-        '실시간 근무 현황',
-        '원터치 휴가 신청',
-        '팀 일정 동기화'
+        '각종 신청서 제출 (휴가, 출장 등)',
+        'AI 면담',
+        '복리후생 신청 (콘도 예약 등)',
+        '증명서 발급 요청'
       ],
-      buttonText: '모바일 앱 다운로드',
+      buttonText: '모바일로 시작하기',
       buttonUrl: 'https://studio--mobile-ehr-20.us-central1.hosted.app',
       icon: <Smartphone size={32} />,
       gradient: 'bg-gradient-to-br from-[#E3DFDA] to-gray-400'
