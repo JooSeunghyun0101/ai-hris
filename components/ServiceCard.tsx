@@ -56,7 +56,7 @@ export default function ServiceCard({
           <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
             {icon}
           </div>
-          <h3 className="text-3xl font-medium font-ok">{title}</h3>
+          <h3 className="text-3xl font-medium font-ok">핵심기능</h3>
         </motion.div>
 
         <motion.p
