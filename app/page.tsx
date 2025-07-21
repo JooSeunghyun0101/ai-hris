@@ -27,11 +27,18 @@ export default function Home() {
       title: 'AIRISS',
       subtitle: 'AI기반 성과/역량 스코어링 시스템',
       description: '인공지능이 객관적이고 정확한 성과 및 역량 평가를 제공합니다. 데이터 기반의 스마트한 인사관리를 경험해보세요.',
+      cardDescription: 'AI 기술을 활용한 객관적이고 공정한 평가 시스템으로, 인간의 편견을 배제하고 데이터에 기반한 정확한 성과 측정을 제공합니다.',
       features: [
         'AI 기반 객관적 성과 측정',
         '실시간 역량 분석 및 피드백',
         '개인별 맞춤 성장 가이드',
         '팀 및 부서별 벤치마킹'
+      ],
+      cardFeatures: [
+        '편견 없는 객관적 평가',
+        '실시간 AI 분석 리포트',
+        '개인 맞춤 성장 로드맵',
+        '조직 전체 성과 인사이트'
       ],
       buttonText: 'AIRISS 살펴보기',
       buttonUrl: 'https://web-production-4066.up.railway.app/dashboard',
@@ -43,11 +50,18 @@ export default function Home() {
       title: '기여도평가',
       subtitle: '공정하고 투명한 기여도 측정',
       description: '팀원들의 기여도를 정량적이고 정성적으로 평가하여 공정한 보상과 인정을 제공합니다.',
+      cardDescription: '360도 다면평가를 통해 팀원의 실제 기여도를 정확히 파악하고, 투명한 평가 프로세스로 조직 내 신뢰를 구축합니다.',
       features: [
         '다면평가 시스템',
         '프로젝트별 기여도 추적',
         '투명한 평가 프로세스',
         '실시간 피드백 수집'
+      ],
+      cardFeatures: [
+        '360도 종합 평가',
+        '프로젝트 기여도 시각화',
+        '투명한 평가 기준',
+        '즉시 피드백 시스템'
       ],
       buttonText: '기여도평가 시작하기',
       buttonUrl: 'https://elevate-growth-system.vercel.app',
@@ -59,11 +73,18 @@ export default function Home() {
       title: '월성과평가',
       subtitle: '체계적인 월별 성과 관리',
       description: '매월 체계적인 성과 리뷰를 통해 지속적인 성장과 개선을 도모합니다.',
+      cardDescription: '월별 목표 설정부터 성과 측정까지, 체계적인 프로세스로 개인과 팀의 지속적인 성장을 지원합니다.',
       features: [
         '월별 목표 설정 및 추적',
         'KPI 기반 성과 측정',
         '상사-부하 1:1 미팅 지원',
         '성과 트렌드 분석'
+      ],
+      cardFeatures: [
+        '스마트 목표 관리',
+        'KPI 대시보드',
+        '1:1 미팅 가이드',
+        '성과 트렌드 차트'
       ],
       buttonText: '월성과평가 체험하기',
       buttonUrl: 'https://9000-firebase-studio-1751945698184.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev',
@@ -75,11 +96,18 @@ export default function Home() {
       title: '모바일 근태관리',
       subtitle: '언제 어디서나 간편한 근태 관리',
       description: '모바일 기기로 간편하게 출퇴근을 관리하고, 실시간으로 근무 현황을 확인할 수 있습니다.',
+      cardDescription: 'GPS 기반의 정확한 위치 추적과 실시간 알림으로, 언제 어디서나 편리하게 근태를 관리할 수 있습니다.',
       features: [
         'GPS 기반 출퇴근 체크',
         '실시간 근무 현황 조회',
         '휴가 및 외근 신청',
         '팀원 일정 공유'
+      ],
+      cardFeatures: [
+        '정확한 GPS 위치 추적',
+        '실시간 근무 현황',
+        '원터치 휴가 신청',
+        '팀 일정 동기화'
       ],
       buttonText: '모바일 앱 다운로드',
       buttonUrl: 'https://studio--mobile-ehr-20.us-central1.hosted.app',
@@ -271,8 +299,8 @@ export default function Home() {
               <AnimatedSection delay={0.4}>
                 <ServiceCard 
                   title={service.title}
-                  description={service.description}
-                  features={service.features}
+                  description={service.cardDescription}
+                  features={service.cardFeatures}
                   buttonText={service.buttonText}
                   buttonUrl={service.buttonUrl}
                   icon={service.icon}
