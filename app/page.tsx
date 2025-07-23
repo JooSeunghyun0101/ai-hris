@@ -90,7 +90,7 @@ export default function Home() {
         'AI 편향 분석 및 피드백'
       ],
       buttonText: '월성과평가 시작하기',
-      buttonUrl: 'https://9000-firebase-studio-1751945698184.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev',
+      buttonUrl: 'https://eval-month.vercel.app/',
       icon: <Calendar size={32} />,
       gradient: 'bg-gradient-to-br from-[#FFA400] to-yellow-600'
     },

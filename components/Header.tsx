@@ -47,7 +47,7 @@ export default function Header() {
     const serviceUrls: Record<string, string> = {
       'airiss': 'https://web-production-4066.up.railway.app/dashboard',
       'contribution': 'https://elevate-growth-system.vercel.app',
-      'monthly': 'https://9000-firebase-studio-1751945698184.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev',
+      'monthly': 'https://eval-month.vercel.app/',
       'mobile': 'https://studio--mobile-ehr-20.us-central1.hosted.app',
       'paypulse': '#', // PayPulse URL - 추후 업데이트 필요
       'compinsight': '#' // CompInsight URL - 추후 업데이트 필요
