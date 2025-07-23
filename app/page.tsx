@@ -119,7 +119,7 @@ export default function Home() {
     },
     {
       id: 'paypulse',
-      title: 'Pay Pulse',
+      title: 'PayPulse',
       subtitle: 'AI 기반 인건비 분석 및 예측 솔루션, 복잡한 인건비 관리를 스마트하게 혁신합니다.',
       description: 'PayPulse는 분산된 급여 및 상여 데이터를 통합하여 인건비 현황을 한눈에 파악하게 해주는 지능형 대시보드입니다. AI 어시스턴트와의 대화를 통해 데이터 기반의 신속하고 정확한 의사결정을 경험하세요.',
       cardDescription: '다양한 형식의 급여 데이터를 손쉽게 업로드하고, AI와 대화하며, 복잡한 인건비를 자동으로 분석하고 예측합니다.',
@@ -135,14 +135,14 @@ export default function Home() {
         '4대 보험/퇴직충당금 자동계산',
         '원클릭 엑셀 다운로드'
       ],
-      buttonText: 'Pay Pulse 시작하기',
+      buttonText: 'PayPulse 시작하기',
       buttonUrl: '#',
       icon: <DollarSign size={32} />,
       gradient: 'bg-gradient-to-br from-[#FFA400] to-yellow-600'
     },
     {
       id: 'compinsight',
-      title: 'Comp Insight',
+      title: 'CompInsight',
       subtitle: 'AI 기반 직원 연봉체계화 및 관리 프로그램',
       description: 'CompInsight는 회사가 직원들의 보상 수준을 전략적으로 관리하고 분석할 수 있도록 돕는 데이터 분석 및 정보 시스템입니다. 복잡하고 분산된 인사(HR) 보상 데이터를 중앙에서 관리하고, 강력한 AI 기술을 접목하여 데이터 기반의 빠르고 정확한 의사결정을 지원하는 지능형 보상 분석 및 예측 플랫폼입니다.',
       cardDescription: '이 프로그램은 복잡하고 분산된 인사(HR) 보상 데이터를 중앙에서 관리하고, 강력한 AI 기술을 접목하여 데이터 기반의 빠르고 정확한 의사결정을 지원하는 지능형 보상 분석 및 예측 플랫폼입니다.',
@@ -158,7 +158,7 @@ export default function Home() {
         '직원 연봉 관리',
         '시각적 분석 대시보드'
       ],
-      buttonText: 'Comp Insight 시작하기',
+      buttonText: 'CompInsight 시작하기',
       buttonUrl: '#',
       icon: <Users size={32} />,
       gradient: 'bg-gradient-to-br from-[#55474A] to-gray-700'

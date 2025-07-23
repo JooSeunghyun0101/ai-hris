@@ -49,8 +49,8 @@ export default function Header() {
       'contribution': 'https://elevate-growth-system.vercel.app',
       'monthly': 'https://9000-firebase-studio-1751945698184.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev',
       'mobile': 'https://studio--mobile-ehr-20.us-central1.hosted.app',
-      'paypulse': '#', // Pay Pulse URL - 추후 업데이트 필요
-      'compinsight': '#' // Comp Insight URL - 추후 업데이트 필요
+      'paypulse': '#', // PayPulse URL - 추후 업데이트 필요
+      'compinsight': '#' // CompInsight URL - 추후 업데이트 필요
     };
     
     const url = serviceUrls[serviceId];
@@ -76,8 +76,8 @@ export default function Header() {
       { name: 'Mobile eHR', id: 'mobile' }
     ],
     '보상': [
-      { name: 'Pay Pulse', id: 'paypulse' },
-      { name: 'Comp Insight', id: 'compinsight' }
+      { name: 'PayPulse', id: 'paypulse' },
+      { name: 'CompInsight', id: 'compinsight' }
     ]
   };
 
