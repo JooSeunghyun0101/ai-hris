@@ -230,3 +230,15 @@ html {
   font-size: var(--font-size);
   scroll-behavior: smooth;
 }
+
+/* Custom cursor styles */
+* {
+  cursor: none !important;
+}
+
+/* Show default cursor on mobile */
+@media (hover: none) {
+  * {
+    cursor: auto !important;
+  }
+}
