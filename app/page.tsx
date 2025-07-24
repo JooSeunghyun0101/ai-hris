@@ -189,18 +189,18 @@ export default function Home() {
             <Image
               src="/ok-logo.png"
               alt="OK Logo"
-              width={360}
-              height={180}
-              className="h-40 w-auto"
+              width={468}
+              height={234}
+              className="h-52 w-auto"
               priority
             />
-            <h1 className="text-6xl md:text-8xl font-medium text-gray-800 font-ok mt-6">
+            <h1 className="text-8xl md:text-9xl font-medium text-gray-800 font-ok mt-8">
               솔루션
             </h1>
           </motion.div>
           
           <motion.p
-            className="text-xl md:text-2xl text-gray-600 leading-relaxed font-ok font-light"
+            className="text-3xl md:text-4xl text-gray-600 leading-relaxed font-ok font-light"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -210,7 +210,7 @@ export default function Home() {
           </motion.p>
           
           <motion.p
-            className="text-lg text-gray-500 font-light"
+            className="text-2xl text-gray-500 font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -220,7 +220,7 @@ export default function Home() {
 
           <motion.button
             onClick={scrollToFirstSection}
-            className="group bg-[#F55000] text-white px-8 py-4 rounded-xl hover:bg-orange-600 transition-all duration-300 flex items-center gap-3 mx-auto shadow-lg font-ok font-light mt-8"
+            className="group bg-[#F55000] text-white px-12 py-6 rounded-xl hover:bg-orange-600 transition-all duration-300 flex items-center gap-4 mx-auto shadow-lg font-ok font-light mt-12 text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -229,7 +229,7 @@ export default function Home() {
           >
             <span>서비스 둘러보기</span>
             <ChevronDown 
-              size={20} 
+              size={28} 
               className="group-hover:translate-y-1 transition-transform" 
             />
           </motion.button>
@@ -243,12 +243,12 @@ export default function Home() {
           transition={{ delay: 1.5 }}
         >
           <motion.div
-            className="w-6 h-10 border-2 border-[#F55000] rounded-full flex justify-center"
-            animate={{ y: [0, 8, 0] }}
+            className="w-8 h-14 border-2 border-[#F55000] rounded-full flex justify-center"
+            animate={{ y: [0, 10, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           >
             <motion.div
-              className="w-1 h-3 bg-[#F55000] rounded-full mt-2"
+              className="w-1.5 h-4 bg-[#F55000] rounded-full mt-3"
               animate={{ scaleY: [1, 0.5, 1] }}
               transition={{ duration: 1.5, repeat: Infinity }}
             />
@@ -269,23 +269,23 @@ export default function Home() {
           }}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
               <AnimatedSection delay={0.2}>
-                <div className="space-y-6">
+                <div className="space-y-8">
                   <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                   >
                     <span 
-                      className="text-sm font-light tracking-wider uppercase text-[#F55000] font-ok"
+                      className="text-lg font-light tracking-wider uppercase text-[#F55000] font-ok"
                     >
                       Service {index + 1}
                     </span>
                   </motion.div>
                   
                   <motion.h2
-                    className="text-4xl md:text-5xl font-medium leading-tight font-ok"
+                    className="text-6xl md:text-7xl font-medium leading-tight font-ok"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -294,7 +294,7 @@ export default function Home() {
                   </motion.h2>
                   
                   <motion.h3
-                    className="text-xl md:text-2xl text-gray-600 font-light font-ok"
+                    className="text-3xl md:text-4xl text-gray-600 font-light font-ok"
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
@@ -303,7 +303,7 @@ export default function Home() {
                   </motion.h3>
                   
                   <motion.p
-                    className="text-lg text-gray-600 leading-relaxed font-ok font-light"
+                    className="text-2xl text-gray-600 leading-relaxed font-ok font-light"
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
@@ -312,7 +312,7 @@ export default function Home() {
                   </motion.p>
                   
                   <motion.ul
-                    className="space-y-3"
+                    className="space-y-4"
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
@@ -320,12 +320,12 @@ export default function Home() {
                     {service.features.map((feature, featureIndex) => (
                       <motion.li
                         key={featureIndex}
-                        className="flex items-center gap-3 text-gray-700 font-ok font-light"
+                        className="flex items-center gap-4 text-gray-700 font-ok font-light text-xl"
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.4, delay: 0.6 + featureIndex * 0.1 }}
                       >
-                        <div className="w-2 h-2 bg-[#F55000] rounded-full"></div>
+                        <div className="w-3 h-3 bg-[#F55000] rounded-full"></div>
                         {feature}
                       </motion.li>
                     ))}
@@ -338,7 +338,7 @@ export default function Home() {
                   >
                     <a
                       href={service.buttonUrl}
-                      className="inline-flex items-center gap-2 bg-[#F55000] text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-300 font-ok font-light"
+                      className="inline-flex items-center gap-3 bg-[#F55000] text-white px-8 py-4 rounded-lg hover:bg-orange-600 transition-colors duration-300 font-ok font-light text-xl"
                     >
                       {service.buttonText}
                     </a>

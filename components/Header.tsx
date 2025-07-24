@@ -115,9 +115,9 @@ export default function Header() {
             <Image
               src="/ok-logo.png"
               alt="OK Logo"
-              width={80}
-              height={40}
-              className="h-10 w-auto"
+              width={104}
+              height={52}
+              className="h-14 w-auto"
               priority
             />
           </motion.div>
@@ -125,7 +125,7 @@ export default function Header() {
           {Object.keys(categories).map((categoryName) => (
             <motion.div
               key={categoryName}
-              className="text-lg text-center cursor-pointer hover:text-[#F55000] transition-colors py-2 font-ok font-light"
+              className="text-2xl text-center cursor-pointer hover:text-[#F55000] transition-colors py-3 font-ok font-light"
               whileHover={{ scale: 1.05 }}
             >
               {categoryName}
@@ -152,7 +152,7 @@ export default function Header() {
                         <motion.button
                           key={item.id}
                           onClick={() => scrollToSection(item.id)}
-                          className="block w-full text-lg hover:text-[#F55000] transition-colors py-1 whitespace-nowrap"
+                          className="block w-full text-2xl hover:text-[#F55000] transition-colors py-2 whitespace-nowrap"
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: index * 0.1 + 0.1 }}

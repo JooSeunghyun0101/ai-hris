@@ -26,7 +26,7 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <motion.div
-      className={`relative overflow-hidden rounded-2xl p-8 text-white ${gradient} shadow-2xl`}
+      className={`relative overflow-hidden rounded-2xl p-10 text-white ${gradient} shadow-2xl`}
       initial={{ opacity: 0, scale: 0.9, rotateY: -15 }}
       whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
       transition={{ 
@@ -53,14 +53,14 @@ export default function ServiceCard({
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: delay + 0.2 }}
         >
-          <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
+          <div className="p-4 bg-white/20 rounded-xl backdrop-blur-sm">
             {icon}
           </div>
-          <h3 className="text-3xl font-medium font-ok">핵심기능</h3>
+          <h3 className="text-5xl font-medium font-ok">핵심기능</h3>
         </motion.div>
 
         <motion.p
-          className="text-lg mb-6 text-white/95 leading-relaxed font-ok font-light"
+          className="text-2xl mb-8 text-white/95 leading-relaxed font-ok font-light"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: delay + 0.3 }}
@@ -69,7 +69,7 @@ export default function ServiceCard({
         </motion.p>
 
         <motion.ul
-          className="space-y-3 mb-8 font-ok font-light"
+          className="space-y-4 mb-10 font-ok font-light"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: delay + 0.4 }}
@@ -77,20 +77,20 @@ export default function ServiceCard({
           {features.map((feature, index) => (
             <motion.li
               key={index}
-              className="flex items-center gap-3"
+              className="flex items-center gap-4"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: delay + 0.5 + index * 0.1 }}
             >
-              <ChevronRight size={20} className="text-white/90" />
-              <span className="text-white/95">{feature}</span>
+              <ChevronRight size={26} className="text-white/90" />
+              <span className="text-white/95 text-xl">{feature}</span>
             </motion.li>
           ))}
         </motion.ul>
 
         <motion.button
           onClick={() => window.open(buttonUrl, '_blank')}
-          className="group bg-white text-gray-900 px-8 py-4 rounded-xl hover:bg-white/90 transition-all duration-300 flex items-center gap-3 shadow-lg font-ok font-light"
+          className="group bg-white text-gray-900 px-10 py-5 rounded-xl hover:bg-white/90 transition-all duration-300 flex items-center gap-4 shadow-lg font-ok font-light text-xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: delay + 0.6 }}
@@ -99,7 +99,7 @@ export default function ServiceCard({
         >
           <span className="font-light">{buttonText}</span>
           <ArrowRight 
-            size={20} 
+            size={26} 
             className="group-hover:translate-x-1 transition-transform" 
           />
         </motion.button>
