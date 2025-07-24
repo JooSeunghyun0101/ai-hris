@@ -8,6 +8,7 @@ import { ChevronDown } from 'lucide-react';
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,7 @@ export default function Header() {
   const scrollToSection = (sectionId: string) => {
     console.log('Scrolling to section:', sectionId);
     setIsExpanded(false);
+    setIsScrolling(true);
     
     // 헤더가 닫힌 후 스크롤 실행
     setTimeout(() => {
@@ -37,8 +39,14 @@ export default function Header() {
           top: targetPosition,
           behavior: 'smooth'
         });
+        
+        // 스크롤 완료 후 플래그 해제 (약 1초 후)
+        setTimeout(() => {
+          setIsScrolling(false);
+        }, 1000);
       } else {
         console.log('Element not found with ID:', sectionId);
+        setIsScrolling(false);
       }
     }, 100);
   };
@@ -49,8 +57,8 @@ export default function Header() {
       'contribution': 'https://elevate-growth-system.vercel.app',
       'monthly': 'https://eval-month.vercel.app/',
       'mobile': 'https://studio--mobile-ehr-20.us-central1.hosted.app',
-      'paypulse': '#', // PayPulse URL - 추후 업데이트 필요
-      'compinsight': '#' // CompInsight URL - 추후 업데이트 필요
+      'paypulse': 'https://studio--paypulse-qeph9.us-central1.hosted.app/',
+      'compinsight': 'https://studio--compinsight-p776i.us-central1.hosted.app/'
     };
     
     const url = serviceUrls[serviceId];
@@ -94,8 +102,8 @@ export default function Header() {
         height: isExpanded ? 'auto' : 'auto'
       }}
       transition={{ duration: 0.5 }}
-      onMouseEnter={() => setIsExpanded(true)}
-      onMouseLeave={() => setIsExpanded(false)}
+      onMouseEnter={() => !isScrolling && setIsExpanded(true)}
+      onMouseLeave={() => !isScrolling && setIsExpanded(false)}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-5 gap-2 items-center py-4">
@@ -117,7 +125,7 @@ export default function Header() {
           {Object.keys(categories).map((categoryName) => (
             <motion.div
               key={categoryName}
-              className="text-center cursor-pointer hover:text-[#F55000] transition-colors py-2 font-ok font-light"
+              className="text-lg text-center cursor-pointer hover:text-[#F55000] transition-colors py-2 font-ok font-light"
               whileHover={{ scale: 1.05 }}
             >
               {categoryName}
@@ -144,7 +152,7 @@ export default function Header() {
                         <motion.button
                           key={item.id}
                           onClick={() => scrollToSection(item.id)}
-                          className="block w-full text-sm hover:text-[#F55000] transition-colors py-1 whitespace-nowrap"
+                          className="block w-full text-lg hover:text-[#F55000] transition-colors py-1 whitespace-nowrap"
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: index * 0.1 + 0.1 }}
