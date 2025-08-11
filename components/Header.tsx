@@ -57,7 +57,7 @@ export default function Header() {
       'contribution': 'https://elevate-growth-system.vercel.app',
       'monthly': 'https://eval-month.vercel.app/',
       'mobile': 'https://studio--mobile-ehr-20.us-central1.hosted.app',
-      'paypulse': 'https://studio--paypulse-qeph9.us-central1.hosted.app/',
+      'paypulse': 'https://paypulse99.vercel.app/',
       'compinsight': 'https://studio--compinsight-p776i.us-central1.hosted.app/'
     };
     

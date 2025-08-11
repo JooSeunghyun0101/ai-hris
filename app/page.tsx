@@ -136,7 +136,7 @@ export default function Home() {
         '원클릭 엑셀 다운로드'
       ],
       buttonText: 'PayPulse 시작하기',
-      buttonUrl: 'https://studio--paypulse-qeph9.us-central1.hosted.app/',
+      buttonUrl: 'https://paypulse99.vercel.app/',
       icon: <DollarSign size={32} />,
       gradient: 'bg-gradient-to-br from-[#FFA400] to-yellow-600'
     },
